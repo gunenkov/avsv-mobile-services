@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "avsv-datarooms": {
+      "projectType": "library",
+      "root": "projects/avsv-datarooms",
+      "sourceRoot": "projects/avsv-datarooms/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/avsv-datarooms/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/avsv-datarooms/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/avsv-datarooms/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/avsv-datarooms/src/test.ts",
+            "tsConfig": "projects/avsv-datarooms/tsconfig.spec.json",
+            "karmaConfig": "projects/avsv-datarooms/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "avsv-datarooms"
 }

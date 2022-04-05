@@ -2,6 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "avsv-datarooms": [
+        "dist/avsv-datarooms/avsv-datarooms",
+        "dist/avsv-datarooms"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

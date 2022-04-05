@@ -1,0 +1,19 @@
+{
+  "name": "avsv-datarooms",
+  "author": "Mikhail Gunenkov",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "DataRooms",
+  "keywords": ["DataRooms"],
+  "repository": "https://github.com/paularmstrong/node-templates.git",
+  "peerDependencies": {
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0",
+    "@capacitor-community/http": "^1.4.1",
+    "@capacitor/device": "^1.1.2",
+    "js-sha1": "^0.6.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
